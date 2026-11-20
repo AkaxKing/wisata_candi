@@ -44,7 +44,6 @@ class _FavoriteScreenState extends State<FavoriteScreen> {
                       style: const TextStyle(fontWeight: FontWeight.bold),
                     ),
                     subtitle: Text(candi.location),
-                    // Setelah kembali dari Detail, muat ulang daftar.
                     onTap: () => Navigator.push(
                       context,
                       MaterialPageRoute(
