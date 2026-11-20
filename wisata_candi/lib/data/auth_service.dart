@@ -41,7 +41,7 @@ class AuthService {
 
   // ---- Favorit ----
   static Set<String> get favorites =>
-      _favorites[currentUsername] ?? <String>{};
+      _favorites[currentUsername ?? ''] ?? <String>{};
 
   static bool isFavorite(String candiName) => favorites.contains(candiName);
 
